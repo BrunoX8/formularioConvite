@@ -49,6 +49,7 @@ label + radio-wrapper {
   border-radius: .5rem;
   display: grid;
   justify-items: center;
+  cursor: pointer;
   gap: .5rem;
 
   padding: .5rem;
@@ -62,11 +63,12 @@ label + radio-wrapper {
     position: absolute;
     inset: 0;
   }
-
-  &:has(:checked) {
-    border: 2px solid var(--brand-light);
-  }
 }
+
+.theme-inner input:checked {
+    border: 2px solid var(--brand-light); /* Cor azul para indicar seleção */
+    border-radius: 8px;
+  }
 
 .theme-inner img {
     width: 100%;
@@ -99,7 +101,7 @@ input[type="radio"] {
 
 }
 
-input[type="radio"]:checked + label {
-    border: 3px solid #007BFF; /* Azul claro */
+.color-wrapper input[type="radio"]:checked + label {
+    border: 3px solid var(--brand-light); /* Azul claro */
     transform: scale(1.1); /* Aumenta o círculo levemente */
   }
