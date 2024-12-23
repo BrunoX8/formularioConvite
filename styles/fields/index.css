@@ -1,0 +1,68 @@
+@import url(radio.css);
+@import url(droparea.css);
+@import url(button.css);
+
+input, textarea, select {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px solid var(--input-stroke);
+    padding: 1rem 1rem;
+    font: var(--body-md);
+    color: var(--text-body);
+    background: var(--input-base);
+    cursor: pointer;
+}
+
+label {
+    font: var(--body-sm);
+    color: var(--text-body);
+
+    display: block;
+    margin-bottom: .25rem;
+}
+
+input {
+    &:invalid {
+        border: 0.125rem solid var(--danger);
+    }
+
+    &[required]+.error {
+        color: var(--danger);
+    }
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: .125rem solid var(--brand-light);
+    outline-offset: 1px;
+}
+
+input[type="datetime-local"] {
+    color: var(--input-placeholder);
+}
+
+.event-info .flex {
+    gap: 1.25rem;
+}
+
+input[type="datetime-local"] {
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+}
+
+.separator {
+    border: 1px solid var(--input-stroke);
+}
+
+input[type="checkbox"] {
+    width: 1rem;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

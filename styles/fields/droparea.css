@@ -1,0 +1,37 @@
+.upload-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.upload-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.upload-container label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: var(--shape-button);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-container label:hover {
+    background-color: var(--shape-hover);
+}
+
+.upload-container input {
+    display: none;
+}
+
+.upload-container span {
+    color: var(--input-placeholder);
+}

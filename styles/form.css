@@ -1,0 +1,39 @@
+@import url(fields/index.css);
+@import url(fields/checkbox.css);
+
+form {
+    margin-top: 2.5rem;
+}
+
+.form-header {
+    color: var(--text-heading);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.calendar {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    gap: 1.5rem;
+}
+
+legend {
+    color: var(--text-body);
+    margin: 1rem 0;
+}
+
+.action-wrapper {
+    margin-top: 2rem;
+    position: relative;
+}
